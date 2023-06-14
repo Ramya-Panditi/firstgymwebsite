@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Gym Website</title>
+    <style>
+        
+        body{
+            margin:0px;
+            padding: 0px;;
+            background: url('img/bg.jpg');
+            background-size:cover;
+            color:white;
+            font-family: 'Ubuntu', sans-serif;
+            
+        }
+        /* header{
+            background-color: black;
+        } */
+        .left{
+            position: absolute;
+            top:4px;
+            left:34px;
+
+            display:inline-block;
+            /* border: 3px solid white; */
+
+        }
+        .left img{
+            display: block;
+            width: 41px;
+            background-blend-mode: color-burn;
+            margin: auto;
+        }
+        .mid{
+            background-color: black;
+            width:33%;
+            display:block;
+            margin: 20px auto;
+            /* border: 3px solid yellow; */
+            
+            
+
+        }
+        .right{
+            position: absolute;
+            top:7px;
+            right:34px;
+            padding-left: 20px;
+            display: inline-block;
+            /* border: 3px solid rgb(0, 255, 42); */
+            /* background-color: black; */
+           
+            
+
+        }
+        .right img{
+            width:41px;
+            float:right;
+
+            
+        }
+        .right img:hover{
+            width:41px;
+            float:right;
+            background-color: rgba(84, 78, 78, 0.329);
+            cursor: pointer;
+            
+        }
+        .btn{
+            border:none;
+            border-radius: 15px;
+            padding:4px;
+            font-family: 'Ubuntu', sans-serif;
+            
+        }
+        .btn:hover{
+            background-color: grey;
+            cursor: pointer;
+            
+        }
+        #call{
+            
+            float:right;
+            position: relative;
+            top:9px;
+            left:-6px;
+        }
+        #mail{
+            float:right;
+            position: relative;
+            top:9px;
+            left:0px;
+
+        }
+          
+        
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            padding-left: 5px;
+            font-size: 17px;
+        }
+        .navbar li a:hover{
+            background-color: rgba(72, 69, 69, 0.495);
+            cursor: pointer;
+            color: white;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .navbar li{
+            display:inline-block;
+            
+        }
+        .container{
+            margin: 127px 102px;
+            /* border: 2px solid white; */
+            width: 45%;
+            height: 200px;
+            padding: 147px 7px;
+            /* background-color: rgba(0, 0, 0, 0.495); */
+            background-image: radial-gradient(circle, #ece4e48f, #0000009c); 
+
+          
+            
+        }
+        .formg{
+            margin:auto;
+        }
+        
+        .formg input{
+            padding: 10px;
+            margin: 10px auto;
+            border: 2px solid black;
+            /* border:none; */
+            display: block;
+            width: 277px;
+            text-align: center;
+            line-height: 2px;
+            border-radius: 5px;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+        .Gender{
+            font-family: 'Ubuntu', sans-serif;
+            margin:auto;
+
+        }
+        .btn1{
+            border-radius: 170px;
+            padding: 5px;
+            display:block;
+            margin:2px auto;
+            border: 2px solid black;
+        }
+        h3{
+            padding:2px;
+            margin:-58px auto;
+            width: 260px;
+            text-align: center;
+        }
+        form{
+            margin:94px;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Rum Fitness</div>
+        </div>
+        <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+        </div>
+        <div class="right">
+            <Button class="btn" id="mail" >Email us</Button>
+            <Button class="btn" id="call">Call us now</Button>
+        </div>
+        <div class="container">
+            
+            <h3>JOIN THE BEST GYM IN INDIA BY FILLING THIS!</h3>
+            <form action="nobackend.php">
+                <div class="formg">
+                    <input type="text" name = " "placeholder = "Enter your name">
+                </div>
+                <div class="formg">
+                    <input type="email" name = " "placeholder = "Enter your email">
+                </div>
+                <div class="formg">
+                    <input type="text" name = " "placeholder = "Phone number">
+                </div>
+                <div class="formg">
+                    <input type="text" name = " "placeholder = "Gender">
+                </div>
+                <button class="btn1">Submit</button>
+            </form>
+        </div>
+    </header> 
+</body>
+</html>
